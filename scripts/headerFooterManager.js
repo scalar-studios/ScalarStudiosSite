@@ -3,21 +3,10 @@ class CustomNavBar extends HTMLElement {
         this.innerHTML = 
         `
         <ul class="navbar">
-            <li class="dropdown">
-                <a href="index.html" class="dropbtn">Home</a>
-            </li>
-            <li class="dropdown">
-                <a href="games.html" class="dropbtn">Games</a>
-                <div class="dropdown-content">
-                    <a href="https://store.steampowered.com/app/2935430/Dart_The_Dog/">Dart The Dog</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="franchises.html">Franchises</a>
-                <div class="dropdown-content">
-                    <a href="dart_the_dog_franchise.html">Dart The Dog</a>
-                </div>
-            </li>   
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="social_media.html">Social Media</a></li>
+            <li><a href="external_pages.html">External Pages</a></li>
         </ul>
         `
     }

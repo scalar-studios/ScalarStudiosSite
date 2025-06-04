@@ -1,0 +1,32 @@
+.markdown-preview-card {
+    width: 75vw; 
+    max-width: 1200px;
+    margin: 24px auto;
+    border: 2px solid #04AA6D;
+    border-radius: 14px;
+    background: #222;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.markdown-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.markdown-iframe {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    overflow: auto;
+    border-radius: 8px;
+    background: #111;
+    padding: 8px;
+    box-sizing: border-box;
+}
