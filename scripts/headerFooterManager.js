@@ -7,6 +7,7 @@ class CustomNavBar extends HTMLElement {
             <li><a href="projects.html">Projects</a></li>
             <li><a href="social_media.html">Social Media</a></li>
             <li><a href="external_pages.html">External Pages</a></li>
+            <li><a href="wikis.html">Wikis</a></li>
         </ul>
         `
     }
