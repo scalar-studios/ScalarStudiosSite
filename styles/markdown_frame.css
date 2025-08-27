@@ -30,3 +30,27 @@
     padding: 8px;
     box-sizing: border-box;
 }
+
+.project-card-with-image {
+    display: flex;
+    align-items: center; /* Center vertically */
+    gap: 24px;
+    margin-bottom: 32px;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card-with-image .project-image {
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    margin: 0; /* Remove manual margin */
+}
+
+.project-card-with-image .markdown-preview-card {
+    flex: 1;
+}
