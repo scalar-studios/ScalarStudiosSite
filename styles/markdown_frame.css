@@ -43,12 +43,12 @@
 }
 
 .project-card-with-image .project-image {
-    max-width: 180px;
-    max-height: 180px;
+    width: 140px;
+    height: 140px;
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    margin: 0; /* Remove manual margin */
+    margin: 0;
 }
 
 .project-card-with-image .markdown-preview-card {
