@@ -40,7 +40,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
     background-color: #333;
     font-family: "Gill Sans", sans-serif;
 }
@@ -77,7 +77,7 @@ body {
     box-shadow: none;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 2000;
 }
 .navbar .dropdown-content {
     list-style: none;
