@@ -9,6 +9,7 @@ class CustomNavBar extends HTMLElement {
                 <a href="mods.html" class="dropbtn">Mods</a>
                 <ul class="dropdown-content">
                     <li><a href="modjams.html">Mod Jams</a></li>
+                    <li><a href="modpack_mods.html">Modpack Mods</a></li>
                 </ul>
             </li>
             <li><a href="social_media.html">Social Media</a></li>
