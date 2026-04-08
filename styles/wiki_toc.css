@@ -1,0 +1,24 @@
+.wiki-page-wrapper { display: flex; gap: 24px; justify-content: center; }
+.left-toc {
+    width: 220px;
+    max-height: calc(100vh - 120px);
+    position: sticky;
+    top: 80px;
+    background: #181818;
+    border: 2px solid #04AA6D;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    overflow: auto;
+}
+.left-toc h3 { margin: 0 0 8px 0; color: orange; font-size: 1.0em; text-align: center; }
+.toc-link { display: block; color: #ddd; text-decoration: none; padding: 6px 8px; border-radius: 6px; margin: 4px 0; font-size: 0.95em; transition: background 0.12s, color 0.12s; }
+.toc-link:hover { background: #232323; color: #ffd700; }
+.toc-link.active { background: #04AA6D; color: #081615; font-weight: 700; }
+.wiki-content { max-width: 900px; width: 60vw; }
+@media (max-width: 900px) {
+    .wiki-page-wrapper { flex-direction: column; align-items: center; }
+    .left-toc { width: 92vw; position: relative; top: 0; max-height: none; display:flex; flex-wrap:wrap; gap:6px; }
+    .toc-link { flex: 1 1 auto; text-align: center; }
+    .wiki-content { width: 96vw; }
+}

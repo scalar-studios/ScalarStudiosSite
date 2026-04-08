@@ -158,3 +158,50 @@ tr {
     text-align: center;
     font-size: 20px;
   }
+
+/* Ensure header/top images and project images are centered */
+.general center img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+/* Project images used in project listings */
+.project-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+/* Ensure text headers inside the main content are centered */
+.general center {
+    display: block; /* normalize center element behaviour */
+    text-align: center;
+    width: 100%;
+    clear: both; /* ensure it sits below floated nav items */
+}
+
+.general h1,
+.general h2,
+.general h3,
+.general h4 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both; /* avoid floating elements shifting headings */
+}
+
+/* Clear floats for top-level page containers so content sits below navbar */
+body > div {
+    clear: both;
+    width: 100%;
+}
+
+/* Center headings that are direct children of top-level divs (wiki pages use this pattern) */
+body > div > h1,
+body > div > h2 {
+    text-align: center;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -123,3 +123,28 @@
         min-width: 0;
     }
 }
+
+/* Carousel styles for rotating images inside .wiki-doc-right */
+.wiki-doc-right.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.wiki-doc-right.carousel .wiki-doc-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+    opacity: 0;
+    transition: opacity 600ms ease-in-out;
+}
+.wiki-doc-right.carousel .wiki-doc-image.active {
+    opacity: 1;
+}
+
+/* Ensure stacked images don't change layout flow */
+.wiki-doc-right.carousel .wiki-doc-image.hidden {
+    pointer-events: none;
+}
