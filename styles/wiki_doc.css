@@ -70,60 +70,6 @@
     }
 }
 
-/* Ultra-compact Navigation box style */
-.wiki-nav-box {
-    display: flex;
-    justify-content: center;
-    gap: 2px;
-    margin: 6px auto;
-    padding: 0;
-    border-radius: 6px;
-    width: auto;
-    min-width: 110px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-}
-
-.wiki-nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 32px;
-    height: 20px;
-    background: #181818;
-    border-radius: 4px;
-    border: 1px solid #04AA6D;
-    color: orange;
-    font-weight: 600;
-    font-size: 0.78em;
-    text-decoration: none;
-    transition: background 0.12s, color 0.12s, border-color 0.12s;
-    padding: 0 8px;
-    box-sizing: border-box;
-}
-
-.wiki-nav-link:hover {
-    background: #232323;
-    color: #ffd700;
-    border-color: #ffb300;
-}
-
-/* Responsive for mobile */
-@media (max-width: 600px) {
-    .wiki-nav-box {
-        flex-direction: column;
-        width: 90vw;
-        gap: 1px;
-        padding: 0;
-        min-width: 0;
-    }
-    .wiki-nav-link {
-        width: 100%;
-        font-size: 0.78em;
-        height: 20px;
-        min-width: 0;
-    }
-}
-
 /* Carousel styles for rotating images inside .wiki-doc-right */
 .wiki-doc-right.carousel {
     position: relative;
