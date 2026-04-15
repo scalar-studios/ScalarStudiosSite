@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/markdown_frame.css">
+        <link rel="stylesheet" href="styles/image_card.css">
         <script src="scripts/headerFooterManager.js"></script>
         <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     </head>
@@ -19,38 +20,6 @@
         <div class="general">
             <center>
                 <h1>Mods</h1>
-                <h2>Minecraft Mods</h2>
-            </center>
-
-            <div class="project-card-with-image">
-                <img src="https://raw.githubusercontent.com/scalar-studios/ScalarCore/refs/heads/main/src/main/resources/scalar_core.png" alt="Scalar Core Icon" class="project-image">
-                <div class="markdown-preview-card">
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/scalar-core" class="markdown-title">
-                            Scalar Core (Minecraft Library)
-                    </a>
-                    <md-block src="https://raw.githubusercontent.com/scalar-studios/ScalarCore/refs/heads/main/README.md" class="markdown-iframe"></md-block>
-                </div>
-            </div>
-
-            <div class="project-card-with-image">
-                <img src="https://github.com/Lemon-Juiced/ScalarRPGUtils/blob/main/src/main/resources/scalarrpgutils.png?raw=true" alt="Scalar RPG Utils Icon" class="project-image">
-                <div class="markdown-preview-card">
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/scalar-rpg-utils" class="markdown-title">
-                            Scalar RPG Utils
-                    </a>
-                    <md-block src="https://raw.githubusercontent.com/Lemon-Juiced/ScalarRPGUtils/main/README.md" class="markdown-iframe"></md-block>
-                </div>
-            </div>
-
-            <center>
-                <a href="modjams.html" class="button">Modjam Mods</a>
-                <a href="modpack_mods.html" class="button">Modpack Mods</a>
-            </center>
-
-            <br>
-            <hr>
-
-            <center>
                 <h2>Crusader Kings III Mods</h2>
             </center>
 
@@ -75,7 +44,25 @@
                     <md-block src="https://raw.githubusercontent.com/scalar-studios/Scalar-Map-Mode-Buttons/refs/heads/main/README.md" class="markdown-iframe"></md-block>
                 </div>
             </div>
-                
+
+            <br>
+            <hr>
+
+            <center>
+                <h2>Minecraft Mods</h2>
+                <button class="button" onclick="window.location.href='https://lemonjuice.dev/minecraft_mods.html'">View Minecraft Mods</button>
+                <h2>Minecraft Modpacks</h2>
+            </center>
+
+            <div class="image-card-container">
+                <a class="mod-card-link" href="https://www.curseforge.com/minecraft/modpacks/scalar-2026alpha" target="_blank">
+                    <div class="image-card">
+                        <img src="https://media.forgecdn.net/avatars/thumbnails/1716/18/256/256/639091100743167583.png" alt="Scalar 2026alpha">
+                        <div class="mod-title">Scalar 2026alpha</div>
+                    </div>
+                </a>
+            </div>
+            
         </div>
     </body>
 </html>

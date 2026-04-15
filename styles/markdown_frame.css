@@ -54,3 +54,15 @@
 .project-card-with-image .markdown-preview-card {
     flex: 1;
 }
+
+@media (max-width: 800px) {
+    .project-card-with-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card-with-image .markdown-preview-card {
+        width: 92vw;
+        max-width: 92vw;
+    }
+}
