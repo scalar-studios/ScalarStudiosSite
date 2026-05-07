@@ -18,6 +18,18 @@ h1 {
 }
 
 /* Gradient subheadings styled to match h1 branding */
+h3 {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    background: linear-gradient(to bottom, #00e6ff 0%, #36b4ff 30%, #7a6dff 65%, #ff79cf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 0 8px rgba(54,180,255,0.06), 0 0 5px rgba(122,109,255,0.04);
+}
+
 h2 {
     font-family: "Gill Sans", sans-serif;
     font-weight: 700;

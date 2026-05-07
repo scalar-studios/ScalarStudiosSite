@@ -3,7 +3,7 @@
     if(!tocList) return;
     const content = document.querySelector('.wiki-content');
     if(!content) return;
-    const headings = content.querySelectorAll('h2');
+    const headings = content.querySelectorAll('h2, h3');
     headings.forEach(h => {
         if(!h.id) {
             h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-');
@@ -11,6 +11,7 @@
         const a = document.createElement('a');
         a.href = '#'+h.id;
         a.className = 'toc-link';
+        if(h.tagName === 'H3') a.classList.add('toc-link-sub');
         a.textContent = h.textContent.trim();
         tocList.appendChild(a);
     });

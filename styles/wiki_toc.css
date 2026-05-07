@@ -13,6 +13,7 @@
 }
 .left-toc h3 { margin: 0 0 8px 0; color: orange; font-size: 1.0em; text-align: center; }
 .toc-link { display: block; color: #ddd; text-decoration: none; padding: 6px 8px; border-radius: 6px; margin: 4px 0; font-size: 0.95em; transition: background 0.12s, color 0.12s; }
+.toc-link.toc-link-sub { padding-left: 20px; font-size: 0.88em; color: #aaa; }
 .toc-link:hover { background: #232323; color: #ffd700; }
 .toc-link.active { background: #04AA6D; color: #081615; font-weight: 700; }
 .wiki-content { max-width: 900px; width: 60vw; }

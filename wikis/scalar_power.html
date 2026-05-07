@@ -32,6 +32,9 @@
 
     		<main class="wiki-content">
     			<h2 id="items">Items</h2>
+
+				<h3 id="resources" style="color: cyan;">Resources</h3>
+
     			<div class="wiki-doc-container">
     				<div class="wiki-doc-main">
     					<div class="wiki-doc-left">
@@ -140,6 +143,9 @@
     				</div>
     			</div>
 
+				
+				<h3 id="misc" style="color: cyan;">Misc.</h3>
+
 				<div class="wiki-doc-container">
     				<div class="wiki-doc-main">
     					<div class="wiki-doc-left">
@@ -157,7 +163,7 @@
     				</div>
     			</div>
 
-				<h3 id="tools" style="color: cyan;">Tools</h3>
+				<h3 id="tools">Tools</h3>
 
 				<div class="wiki-doc-container">
     				<div class="wiki-doc-main">
@@ -200,35 +206,65 @@
     				</div>
     			</div>
 
-
+    			<br><hr><br>
 
                 <h2 id="blocks">Blocks</h2>
+
+				<h3 id="devices">Devices</h3>
+
     			<div class="wiki-doc-container">
     				<div class="wiki-doc-main">
-    					<div class="wiki-doc-left" style="width:100%;">
-    						<div class="wiki-doc-info">Recipes and crafting instructions go here.</div>
+    					<div class="wiki-doc-left">
+							<div class="wiki-doc-title">Infinite Water Source</div>
+    						<div class="wiki-doc-info">
+								The Infinite Water Source is a block that generates an infinite amount of water.
+							</div>
     					</div>
+						<div class="wiki-doc-right">
+							<canvas id="infiniteWaterSourceCanvas"></canvas>
+						</div>
     				</div>
     			</div>
 
 
-
-    			<h2 id="crafting">Crafting</h2>
     			<div class="wiki-doc-container">
     				<div class="wiki-doc-main">
-    					<div class="wiki-doc-left" style="width:100%;">
-    						<div class="wiki-doc-info">Recipes and crafting instructions go here.</div>
+    					<div class="wiki-doc-left">
+							<div class="wiki-doc-title">Redstone Clock</div>
+    						<div class="wiki-doc-info">
+								The Redstone Clock is a block that generates pulse of redstone once a second.
+							</div>
     					</div>
+						<div class="wiki-doc-right">
+							<canvas id="redstoneClockCanvas"></canvas>
+						</div>
     				</div>
     			</div>
 
-    			<br><hr><br>
     		</main>
     	</div>
 
     	<script src="../scripts/wiki_toc.js"></script>
-
 	<script src="../scripts/imageCarousel.js"></script>
+	<script src="../scripts/RenderBlock.js"></script>
+	<script>
+		bindBlockRendererFromHtml({
+			canvasSelector: "#infiniteWaterSourceCanvas",
+			topSrc: "https://raw.githubusercontent.com/scalar-studios/Scalar-Power/refs/heads/main/src/main/resources/assets/scalarpower/textures/block/infinite_water_source.png",
+			leftSrc: "https://raw.githubusercontent.com/scalar-studios/Scalar-Power/refs/heads/main/src/main/resources/assets/scalarpower/textures/block/infinite_water_source.png",
+			rightSrc: "https://raw.githubusercontent.com/scalar-studios/Scalar-Power/refs/heads/main/src/main/resources/assets/scalarpower/textures/block/infinite_water_source.png",
+			size: 180,
+			blockHeight: 110
+		}).render();
+		bindBlockRendererFromHtml({
+			canvasSelector: "#redstoneClockCanvas",
+			topSrc: "https://raw.githubusercontent.com/scalar-studios/Scalar-Power/refs/heads/main/src/main/resources/assets/scalarpower/textures/block/redstone_clock.png",
+			leftSrc: "https://raw.githubusercontent.com/scalar-studios/Scalar-Power/refs/heads/main/src/main/resources/assets/scalarpower/textures/block/redstone_clock.png",
+			rightSrc: "https://raw.githubusercontent.com/scalar-studios/Scalar-Power/refs/heads/main/src/main/resources/assets/scalarpower/textures/block/redstone_clock.png",
+			size: 180,
+			blockHeight: 110
+		}).render();
+	</script>
 
     </body>
 </html>
