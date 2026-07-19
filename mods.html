@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/markdown_frame.css">
         <link rel="stylesheet" href="styles/image_card.css">
+        <link rel="stylesheet" href="styles/sub_nav.css">
         <script src="scripts/headerFooterManager.js"></script>
         <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     </head>
@@ -20,65 +21,83 @@
         <div class="general">
             <center>
                 <h1>Mods</h1>
-                <h2>Crusader Kings III Mods</h2>
             </center>
 
-            <div class="project-card-with-image">
-                <!-- Scalar Free Disinherits -->
-                <img src="https://raw.githubusercontent.com/scalar-studios/Scalar-Free-Disinherits/refs/heads/main/thumbnail.png" alt="Scalar Free Disinherits Icon" class="project-image">
-                <div class="markdown-preview-card">
-                    <a href="https://github.com/scalar-studios/Scalar-Free-Disinherits" class="markdown-title">
-                            Scalar Free Disinherits
-                    </a>
-                    <md-block src="https://raw.githubusercontent.com/scalar-studios/Scalar-Free-Disinherits/refs/heads/main/README.md" class="markdown-iframe"></md-block>
+            <div class="subnav-tabs">
+                <button class="subnav-tab active" id="tab-ck3" onclick="showModSection('ck3')">Crusader Kings III</button>
+                <button class="subnav-tab" id="tab-minecraft" onclick="showModSection('minecraft')">Minecraft</button>
+            </div>
+
+            <div id="section-ck3">
+                <center>
+                    <h2>Crusader Kings III Mods</h2>
+                </center>
+
+                <div class="project-card-with-image">
+                    <!-- Scalar Free Disinherits -->
+                    <img src="https://raw.githubusercontent.com/scalar-studios/Scalar-Free-Disinherits/refs/heads/main/thumbnail.png" alt="Scalar Free Disinherits Icon" class="project-image">
+                    <div class="markdown-preview-card">
+                        <a href="https://github.com/scalar-studios/Scalar-Free-Disinherits" class="markdown-title">
+                                Scalar Free Disinherits
+                        </a>
+                        <md-block src="https://raw.githubusercontent.com/scalar-studios/Scalar-Free-Disinherits/refs/heads/main/README.md" class="markdown-iframe"></md-block>
+                    </div>
+                </div>
+
+                <div class="project-card-with-image">
+                    <!-- Scalar Map Mode Buttons -->
+                    <img src="https://raw.githubusercontent.com/scalar-studios/Scalar-Map-Mode-Buttons/refs/heads/main/thumbnail.png" alt="Scalar Map Mode Buttons Icon" class="project-image">
+                    <div class="markdown-preview-card">
+                        <a href="https://github.com/scalar-studios/Scalar-Map-Mode-Buttons" class="markdown-title">
+                                Scalar Map Mode Buttons
+                        </a>
+                        <md-block src="https://raw.githubusercontent.com/scalar-studios/Scalar-Map-Mode-Buttons/refs/heads/main/README.md" class="markdown-iframe"></md-block>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-card-with-image">
-                <!-- Scalar Map Mode Buttons -->
-                <img src="https://raw.githubusercontent.com/scalar-studios/Scalar-Map-Mode-Buttons/refs/heads/main/thumbnail.png" alt="Scalar Map Mode Buttons Icon" class="project-image">
-                <div class="markdown-preview-card">
-                    <a href="https://github.com/scalar-studios/Scalar-Map-Mode-Buttons" class="markdown-title">
-                            Scalar Map Mode Buttons
+            <div id="section-minecraft" style="display: none;">
+                <center>
+                    <h2>Minecraft Modpacks</h2>
+                </center>
+
+                <div class="image-card-container">
+                    <a class="mod-card-link" href="https://www.curseforge.com/minecraft/modpacks/scalar-2025" target="_blank">
+                        <div class="image-card">
+                            <img src="https://media.forgecdn.net/avatars/thumbnails/1455/903/64/64/638945048673747189.png" alt="Scalar 2025">
+                            <div class="mod-title">Scalar 2025</div>
+                        </div>
                     </a>
-                    <md-block src="https://raw.githubusercontent.com/scalar-studios/Scalar-Map-Mode-Buttons/refs/heads/main/README.md" class="markdown-iframe"></md-block>
+                    <a class="mod-card-link" href="https://www.curseforge.com/minecraft/modpacks/scalar-2026alpha" target="_blank">
+                        <div class="image-card">
+                            <img src="https://media.forgecdn.net/avatars/thumbnails/1716/18/256/256/639091100743167583.png" alt="Scalar 2026alpha">
+                            <div class="mod-title">Scalar 2026alpha</div>
+                        </div>
+                    </a>
+                    <a class="mod-card-link" href="https://www.curseforge.com/minecraft/modpacks/scalar-26-1" target="_blank">
+                        <div class="image-card">
+                            <img src="https://media.forgecdn.net/avatars/thumbnails/1865/879/64/64/639170769634161356.png" alt="Scalar 26">
+                            <div class="mod-title">Scalar 26</div>
+                        </div>
+                    </a>
                 </div>
+
+                <center>
+                    <h2>Minecraft Mods</h2>
+                    <button class="button" onclick="window.location.href='https://lemonjuice.dev/minecraft_mods.html'">View Minecraft Mods</button><br>
+                    Minecraft Mods are now hosted on lemonjuice.dev, they are no longer hosted on this website. Please click the button above to view the mods.
+                </center>
             </div>
 
-            <br>
-            <hr>
-
-            <center>
-                <h2>Minecraft Modpacks</h2>
-            </center>
-
-            <div class="image-card-container">
-                <a class="mod-card-link" href="https://www.curseforge.com/minecraft/modpacks/scalar-2025" target="_blank">
-                    <div class="image-card">
-                        <img src="https://media.forgecdn.net/avatars/thumbnails/1455/903/64/64/638945048673747189.png" alt="Scalar 2025">
-                        <div class="mod-title">Scalar 2025</div>
-                    </div>
-                </a>
-                <a class="mod-card-link" href="https://www.curseforge.com/minecraft/modpacks/scalar-2026alpha" target="_blank">
-                    <div class="image-card">
-                        <img src="https://media.forgecdn.net/avatars/thumbnails/1716/18/256/256/639091100743167583.png" alt="Scalar 2026alpha">
-                        <div class="mod-title">Scalar 2026alpha</div>
-                    </div>
-                </a>
-                <a class="mod-card-link" href="https://www.curseforge.com/minecraft/modpacks/scalar-26-1" target="_blank">
-                    <div class="image-card">
-                        <img src="https://media.forgecdn.net/avatars/thumbnails/1865/879/64/64/639170769634161356.png" alt="Scalar 26">
-                        <div class="mod-title">Scalar 26</div>
-                    </div>
-                </a>
-            </div>
-
-            <center>
-                <h2>Minecraft Mods</h2>
-                <button class="button" onclick="window.location.href='https://lemonjuice.dev/minecraft_mods.html'">View Minecraft Mods</button><br>
-                Minecraft Mods are now hosted on lemonjuice.dev, they are no longer hosted on this website. Please click the button above to view the mods.
-            </center>
-            
         </div>
+
+        <script>
+            function showModSection(section) {
+                document.getElementById('section-ck3').style.display = section === 'ck3' ? '' : 'none';
+                document.getElementById('section-minecraft').style.display = section === 'minecraft' ? '' : 'none';
+                document.getElementById('tab-ck3').classList.toggle('active', section === 'ck3');
+                document.getElementById('tab-minecraft').classList.toggle('active', section === 'minecraft');
+            }
+        </script>
     </body>
 </html>
