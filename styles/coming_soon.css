@@ -1,0 +1,22 @@
+.coming-soon-card {
+    background: #222;
+    border: 2px dashed #666;
+    border-radius: 18px;
+    width: 220px;
+    padding: 18px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 178px;
+    color: #999;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.coming-soon-card .feature-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ccc;
+    margin-bottom: 6px;
+}

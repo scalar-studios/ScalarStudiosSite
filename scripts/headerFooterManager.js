@@ -4,8 +4,19 @@ class CustomNavBar extends HTMLElement {
         `
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="mods.html">Mods</a></li>
+            <li class="dropdown">
+                <a href="games.html">Games</a>
+                <div class="dropdown-content">
+                    <a href="vinland1000.html">Vinland: 1000</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <span class="dropdown-label">Other Software</span>
+                <div class="dropdown-content">
+                    <a href="projects.html">Projects</a>
+                    <a href="mods.html">Mods</a>
+                </div>
+            </li>
             <li><a href="wikis.html">Wikis</a></li>
             <li><a href="external_pages.html">External Pages</a></li>
         </ul>
@@ -15,12 +26,23 @@ class CustomNavBar extends HTMLElement {
 
 class CustomNavBarIndented extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = 
+        this.innerHTML =
         `
         <ul class="navbar">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../projects.html">Projects</a></li>
-            <li><a href="../mods.html">Mods</a></li>
+            <li class="dropdown">
+                <a href="../games.html">Games</a>
+                <div class="dropdown-content">
+                    <a href="../vinland1000.html">Vinland: 1000</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <span class="dropdown-label">Other Software</span>
+                <div class="dropdown-content">
+                    <a href="../projects.html">Projects</a>
+                    <a href="../mods.html">Mods</a>
+                </div>
+            </li>
             <li><a href="../wikis.html">Wikis</a></li>
             <li><a href="../external_pages.html">External Pages</a></li>
         </ul>
